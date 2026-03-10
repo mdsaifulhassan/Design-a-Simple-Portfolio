@@ -37,6 +37,7 @@
 }
 .text-center {
     text-align: center;
+    margin-top: 50px;
 }
 .container {
     width: 71%;
@@ -175,7 +176,7 @@ nav .menu a{
   gap:24px;
   width: 71%;
   max-width: 1140px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 113px auto 0px;
 }
 #resume .resume-container .section-title{
@@ -208,4 +209,53 @@ nav .menu a{
 .resume-container hr {
   margin: 30px 0;
    border-top: 1px solid #D1D1D1;
+}
+
+/* Footer */
+
+footer{
+  margin-top: 130px;
+  background-color: #FFF8F3;
+  padding: 130px 0px;
+}
+footer .footer-container{
+  width:71%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display:flex;
+  gap:116px;
+}
+.footer-container .social{
+  max-width: 562px;
+}
+.footer-container h2{
+  font-size: 35px;
+  font-weight: bold;
+  color:#181818;
+  margin-bottom: 20px;
+}
+.footer-container p{
+  font-size: 16px;
+  color:#474747;
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+.footer-container .icons a{
+  margin-right: 24px;
+}
+
+.footer-container form input[type="text"]{
+  width: 461px;
+  padding: 18px 30px;
+  margin-bottom: 24px;
+  border:none;
+  border-radius: 5px;
+  color:#757575;
+}
+.footer-container form textarea{
+  width: 461px;
+  padding: 18px 0px 134px 31px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 24px;
 }
