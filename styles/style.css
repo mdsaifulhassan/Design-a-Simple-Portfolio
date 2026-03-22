@@ -140,12 +140,6 @@ nav .menu a{
   font-size: 20px;
   font-weight: bold;
 }
-#skills .skills-container{
-  width: 71%;
-  max-width: 1140px;
-  margin: 0px auto;
-  /* text-align: center; */
-}
 #skills .skills-container .skills-box{
   display:flex;
   gap: 24px;
@@ -258,4 +252,33 @@ footer .footer-container{
   border: none;
   border-radius: 5px;
   margin-bottom: 24px;
+}
+.hide{
+  display: none !important;
+}
+@media screen and (max-width:576px){
+.container {
+    width: 95%;
+}
+  #about, #skills, #resume {
+    padding-top: 60px;
+}
+#skills .skills-container .skills-box,#about .about-container .about-info {
+    flex-direction: column;
+}
+#about .about-container .about-info{
+  gap: 40px;
+}
+.section-heading h2 {
+    font-size: 30px;
+}
+.section-heading p {
+    font-size: 16px;
+}
+.skills-box .skills-card {
+    max-width: 100%;
+}
+#about .about-container {
+    padding: 20px;
+}
 }
