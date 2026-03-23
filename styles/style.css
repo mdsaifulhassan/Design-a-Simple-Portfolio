@@ -18,6 +18,11 @@
   font-weight: bold;
   cursor: pointer;
 }
+.btn-group{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 .section-heading{
   max-width: 827px;
   text-align: center;
@@ -47,10 +52,11 @@
 /* main style */
 header{
     background-color:#FFF8F3;
-    background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
-    background-repeat: no-repeat;
-    background-position: 23px -45px, bottom right;
-    padding-top: 50px;
+    background: url("../images/developer.png") no-repeat 23px 30px,
+     url("../images/header_bg.png") no-repeat bottom right, #FFF8F3;
+    background-size: auto 95%,auto;
+    padding-top: 20px;
+
     /* border: 1px solid red; */
 }
 
@@ -163,6 +169,7 @@ nav .menu a{
 }
 #resume .resume-container{
   gap:24px;
+  display: flex;
   /* border: 1px solid red; */
   margin: 113px auto 0px;
 }
@@ -250,10 +257,38 @@ footer .footer-container{
 .container {
     width: 95%;
 }
+nav .menu {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#banner{
+  margin:20px;
+  gap: 20px;
+  text-align: center;
+}
+#banner .images img {
+  width: 100%;
+}
+#banner .banner-content h1 {
+    font-size: 45px;
+}
+#banner .banner-content h2 {
+    font-size: 38px;
+}
+header{
+    background-color:#FFF8F3;
+    background: url("../images/header_bg.png") no-repeat bottom right, #FFF8F3;
+    background-size: auto;
+}
+.btn-group{
+  justify-content: center;
+}
   #about, #skills, #resume {
     padding-top: 60px;
 }
-#skills .skills-container .skills-box,#about .about-container .about-info,#resume .resume-container,footer .footer-container {
+#skills .skills-container .skills-box,#about .about-container .about-info,#resume 
+.resume-container,
+footer .footer-container,nav,#banner {
     flex-direction: column;
 }
 #about .about-container .about-info{
